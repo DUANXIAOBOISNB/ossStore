@@ -17,8 +17,8 @@ public class uploadUtils {
         String filename=uuid+ext;
 //        地域节点
         String endpoint="http://oss-cn-beijing.aliyuncs.com";
-         String accesskeyid = "LTAI5tKrTXbZiAfiN8Qht3Mg";
-        String accesskeysecret = "IfvxszrmvNU5P1v189bvjz9G0yA3Qe";
+         String accesskeyid = "you key id";
+        String accesskeysecret = "you secret";
 //        oss客户端对象
         OSS ossClient = new OSSClientBuilder().build(endpoint, accesskeyid, accesskeysecret);
         ossClient.putObject("myduanbucket",filename,file.getInputStream());
